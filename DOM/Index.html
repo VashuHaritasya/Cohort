@@ -1,0 +1,17 @@
+<html>
+    <script>
+        function populateDiv(){
+            const a = document.getElementById("firstnumber").value
+            const b = document.getElementById("secondnumber").value
+            const element = document.getElementById("finalsum")
+            // console.log(element);
+            element.innerHTML = parseInt(a) + parseInt(b)
+        }
+    </script>
+    <bdoy>
+        <input id="firstnumber" type="text" placeholder="first number"></input><br></br>
+        <input id="secondnumber" type="text" placeholder="second number"></input><br></br>
+        <button onclick="populateDiv()">calculate sum</button>
+        <div id="finalsum"></div>
+    </bdoy>
+</html>
