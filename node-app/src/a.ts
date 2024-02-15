@@ -1,11 +1,20 @@
-type NumberArr = number[];
-function maxValue(arr: NumberArr) {
-  let max = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
-    }
-  }
-  return max;
+type KeyInput = "up" | "down" | "left" | "right";
+enum Direction {
+  Up = "up",
+  down = "down",
+  left = "left",
+  right = "right",
 }
-maxValue([1, 2, 4, 3]);
+
+function doSomething(keyPressed: Direction) {
+  if (keyPressed == Direction.Up) {
+  }
+}
+
+doSomething(Direction.Up);
+doSomething(Direction.right);
+doSomething(Direction.left);
+doSomething(Direction.down);
+
+console.log(Direction.Up);
+console.log(Direction.down);
